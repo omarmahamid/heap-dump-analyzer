@@ -11,6 +11,8 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <slf4j.version>2.0.7</slf4j.version>
+        <hprof-heap>0.3-SNAPSHOT</hprof-heap>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -19,7 +21,20 @@
         <dependency>
             <groupId>org.gridkit.jvmtool</groupId>
             <artifactId>hprof-heap</artifactId>
-            <version>0.3-SNAPSHOT</version>
+            <version>${hprof-heap}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.4.11</version>
         </dependency>
 
     </dependencies>
