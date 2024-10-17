@@ -33,7 +33,7 @@ public class FastHeapAnalyzerStrategy implements Analyzer{
     }
 
     @Override
-    public File analyze() {
+    public void analyze(long limit, String outputFilename) {
 
         long startTime = System.currentTimeMillis();
         LOGGER.info("Analyzing heap dump...");
@@ -54,11 +54,10 @@ public class FastHeapAnalyzerStrategy implements Analyzer{
                         ));
 
 
-
         Map<String, ClassMetaData> metaDataMap = HeapSizeComputing.compute(sortedByListSize);
 
-        HeapDumpReport.report(metaDataMap, "/Users/omarmahamid/Documents/GitHub/heap-dump-analyzer/dump.txt");
+        HeapDumpReport.report(metaDataMap, outputFilename, limit);
+
         LOGGER.info("Finish analyzing heap dump in {} ms", System.currentTimeMillis() - startTime);
-        return null;
     }
 }
