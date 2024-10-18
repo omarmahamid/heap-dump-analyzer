@@ -31,6 +31,7 @@ public class HeapDumpAnalyzer {
             throw new RuntimeException("Usage: java HeapDumpAnalyzer <file> see Readme.md");
         }
 
+        LOGGER.info("Reading the heap prof file ...");
         Analyzer analyzer = HeapAnalyzerFactory.createAnalyzer(heapDumpFileName);
         analyzer.analyze(limit, outputFilename);
 
