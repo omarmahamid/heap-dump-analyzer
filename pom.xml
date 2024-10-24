@@ -13,6 +13,9 @@
         <maven.compiler.target>17</maven.compiler.target>
         <slf4j.version>2.0.7</slf4j.version>
         <hprof-heap>0.3-SNAPSHOT</hprof-heap>
+        <logback.version>1.4.11</logback.version>
+        <google.gson.version>2.9.1</google.gson.version>
+        <apache.common.pool.version>2.8.0</apache.common.pool.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -34,7 +37,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.4.11</version>
+            <version>${logback.version}</version>
         </dependency>
 
     </dependencies>
