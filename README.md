@@ -5,10 +5,10 @@
 ## Usage
 
 ```
-./heap-dump-analyzer.sh --help
+
 JVM heap dump hprof file analyzer
 
-Usage: ./heap-dump-analyzer.sh [OPTIONS] --inputFile <inputFile>
+Usage: java -Xmx25g -jar heap-dump-analyzer.jar --inputFile <inputFile>
 
 Options:
   -i, --inputFile <inputFile>  binary hprof input file
