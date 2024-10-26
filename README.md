@@ -10,11 +10,6 @@ JVM heap dump hprof file analyzer
 
 Usage: java -Xmx25g -jar heap-dump-analyzer.jar --inputFile <inputFile>
 
-Options:
-  -i, --inputFile <inputFile>  binary hprof input file
-  -t, --top <top>              the top results to display [default: 30]
-  -l, --listStrings            list all Strings found
-  -h, --help                   Print help
 ```
 
 
