@@ -8,7 +8,7 @@
 
 JVM heap dump hprof file analyzer
 
-Usage: java -Xmx25g -jar heap-dump-analyzer.jar <inputFile> <limit> <outputFile>
+Usage: java -jar heap-dump-analyzer.jar <inputFile> <limit> <outputFile>
 
 
 <inputFile>: is the heapdump file
@@ -16,6 +16,8 @@ Usage: java -Xmx25g -jar heap-dump-analyzer.jar <inputFile> <limit> <outputFile>
 <outputFile>: is the analysis report
 
 all of the args is needed.
+
+better to test it with JVM option of Xmx
 ```
 
 
