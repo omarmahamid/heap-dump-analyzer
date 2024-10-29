@@ -8,8 +8,14 @@
 
 JVM heap dump hprof file analyzer
 
-Usage: java -Xmx25g -jar heap-dump-analyzer.jar --inputFile <inputFile>
+Usage: java -Xmx25g -jar heap-dump-analyzer.jar <inputFile> <limit> <outputFile>
 
+
+<inputFile>: is the heapdump file
+<limit>: limit how much classes to display
+<outputFile>: is the analysis report
+
+all of the args is needed.
 ```
 
 
