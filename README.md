@@ -4,20 +4,17 @@
 
 ## Usage
 
+
+
+
 ```
-
-JVM heap dump hprof file analyzer
-
-Usage: java -jar heap-dump-analyzer.jar <inputFile> <limit> <outputFile>
+Usage: java <jvmOptions> -jar heap-dump-analyzer.jar <inputFile> <limit> <outputFile>
 
 
-<inputFile>: is the heapdump file
-<limit>: limit how much classes to display
-<outputFile>: is the analysis report
-
-all of the args is needed.
-
-better to test it with JVM option of Xmx
+<inputFile>: is the heapdump file (MUST)
+<limit>: limit how much classes to display (MUST)
+<outputFile>: is the analysis report (MUST)
+<jvmOptions>: if hprof is BIG use -Xmx25g (Optional)
 ```
 
 
