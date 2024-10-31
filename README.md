@@ -12,7 +12,7 @@ Usage: java <jvmOptions> -jar heap-dump-analyzer.jar <inputFile> <limit> <output
 
 
 <inputFile>: is the heapdump file (MUST)
-<limit>: limit how much classes to display (MUST)
+<limit>: limit how much number of classes to display (MUST)
 <outputFile>: is the analysis report (MUST)
 <jvmOptions>: if hprof is BIG use -Xmx25g (Optional)
 ```
