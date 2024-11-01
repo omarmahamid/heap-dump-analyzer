@@ -110,3 +110,8 @@ Top 80 allocated classes:
 +------------+-----------+-------------+-----------------------------------------------------------+
 
 ```
+
+
+# Future Plan:
+
+Enahnce the perfomrance of the analyzer.
